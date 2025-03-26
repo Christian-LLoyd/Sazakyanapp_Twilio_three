@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "751661721840",
+    "project_id": "sazakyan-app-676dd",
+    "storage_bucket": "sazakyan-app-676dd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751661721840:android:a9162739bc1dd3a6e6ba35",
+        "android_client_info": {
+          "package_name": "com.example.sazakyanapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1ndh6FVMzTIHeRQP-tLw1VF7A4MM9TKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

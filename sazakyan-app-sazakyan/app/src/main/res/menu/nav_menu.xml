@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/history"
+        android:title="History"/>
+
+    <item android:title="Account Settings">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_edit_user"
+                android:icon="@drawable/user_avatar"
+                android:title="Edit User"/>
+
+            <item
+                android:id="@+id/nav_delete_user"
+                android:icon="@drawable/delete_user"
+                android:title="Delete User"/>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+        </menu>
+
+    </item>
+
+    <item android:title="Communication">
+
+        <menu>
+            <item
+                android:id="@+id/nav_chat"
+                android:title="Chat"
+                android:icon="@drawable/chat"/>
+
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/connection"/>
+
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rental"
+    tools:context=".walkthrough.VeryFirstWT">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="313dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:lineHeight="60sp"
+        android:text="Sazakyan\nRental App"
+        android:textColor="#f2f2f2"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/poppins"
+        android:text="Rent an affordable car for you travel\nwhenever you want with your device"
+        android:textColor="#f2f2f2"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStarted"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/getstarted"
+        android:elevation="0dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="#0e0e0e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

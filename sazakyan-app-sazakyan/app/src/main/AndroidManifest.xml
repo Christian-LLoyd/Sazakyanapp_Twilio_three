@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SazakyanApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manila.ManilaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservations.ReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservations.LandcruiserReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservations.RaptorReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservations.HiaceReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservations.ViosReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".descriptions.ViosDescription"
+            android:exported="false" />
+        <activity android:name=".profile.EmailVerificationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".descriptions.LandcruiserDescription"
+            android:exported="false" />
+        <activity
+            android:name=".descriptions.RaptorDescription"
+            android:exported="false" />
+        <activity
+            android:name=".descriptions.HiaceDescription"
+            android:exported="false" />
+        <activity
+            android:name=".profile.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.MainProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vigan.ViganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".makati.MakatiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".walkthrough.VeryFirstWT"
+            android:exported="false" />
+        <activity
+            android:name=".pangasinan.PangasinanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".walkthrough.ThirdWT"
+            android:exported="false" />
+        <activity
+            android:name=".walkthrough.SecondWT"
+            android:exported="false" />
+        <activity
+            android:name=".walkthrough.FirstWT"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

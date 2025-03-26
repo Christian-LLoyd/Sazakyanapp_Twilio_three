@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#1A2030"
+    tools:context=".profile.VerificationActivity">
+
+    <!-- Back Button (top-left corner) -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onBackButtonClicked" />
+
+    <!-- "Verify" TextView -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/veryfirstConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TextViewVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Verify"
+            android:textColor="#00FFD9"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Phone Number EditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumberInputLayout"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="Phone Number"
+        android:textColorHint="#f2f2f2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veryfirstConstraint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/et_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:inputType="phone"
+            android:paddingStart="15dp"
+            android:textColor="@color/primary_font_color"
+            android:textColorHint="#FFFFFF"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TextViewVerify" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Send Code Button -->
+    <Button
+        android:id="@+id/sendCodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Code"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="20dp"
+        android:textColor="#f2f2f2"
+        android:fontFamily="@font/inter_bold"/>
+
+    <!-- Verification Code EditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/codeInputLayout"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="Verification Code"
+        android:textColorHint="#f2f2f2"
+        app:layout_constraintTop_toBottomOf="@id/sendCodeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/codeEditText"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColorHint="#FFFFFF"
+            android:textColor="@color/primary_font_color"
+            android:textSize="17sp"
+            android:fontFamily="@font/inter"
+            android:background="@drawable/et_bg"
+            android:paddingStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Verify Code Button -->
+    <Button
+        android:id="@+id/verifyCodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Code"
+        app:layout_constraintTop_toBottomOf="@id/codeInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="20dp"
+        android:textColor="#f2f2f2"
+        android:fontFamily="@font/inter_bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

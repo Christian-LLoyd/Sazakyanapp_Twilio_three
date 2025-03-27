@@ -11,7 +11,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import com.example.sazakyanapp.models.TwilioResponse
-import com.example.sazakyanapp.network.RetrofitClient
+import com.example.sazakyanapp.network.RetrofitClient2
+
 
 class VerificationActivity : AppCompatActivity() {
 
@@ -20,7 +21,7 @@ class VerificationActivity : AppCompatActivity() {
     private lateinit var sendCodeButton: Button
     private lateinit var verifyCodeButton: Button
 
-    private val verifyServiceSid = "VA41a8372e31d0a7b144c526aaf27a2879" // Replace with your actual SID
+    private val verifyServiceSid = "VA96fb7f70f3ca20fc6faf3239a58d364a" // Replace with your actual SID
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,7 +76,7 @@ class VerificationActivity : AppCompatActivity() {
     }
 
     private fun sendVerificationCode(recipient: String) {
-        val call = RetrofitClient.api.sendOTP(
+        val call = RetrofitClient2.api.sendOTP(
             serviceSid = verifyServiceSid,
             recipient = recipient,  // Use recipient instead of phoneNumber
             channel = "sms"
@@ -98,7 +99,7 @@ class VerificationActivity : AppCompatActivity() {
     }
 
     private fun checkVerificationCode(recipient: String, code: String) {
-        val call = RetrofitClient.api.verifyOTP(
+        val call = RetrofitClient2.api.verifyOTP(
             serviceSid = verifyServiceSid,
             recipient = recipient,  // Use recipient instead of phoneNumber
             code = code

@@ -10,8 +10,8 @@ object RetrofitClient {
     private const val BASE_URL = "https://verify.twilio.com/v2/"
 
     // Twilio Credentials (Replace with your actual values)
-    private const val ACCOUNT_SID = "ACf639c448361fbb5192ad3af91799b3b7"
-    private const val AUTH_TOKEN = "bcc4baf6912a51f53a890e2341a0ba14"
+    private const val ACCOUNT_SID = ""
+    private const val AUTH_TOKEN = ""
 
     private val client = OkHttpClient.Builder().apply {
         addInterceptor { chain ->

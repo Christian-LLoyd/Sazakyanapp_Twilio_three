@@ -21,7 +21,7 @@ class VerificationActivity : AppCompatActivity() {
     private lateinit var sendCodeButton: Button
     private lateinit var verifyCodeButton: Button
 
-    private val verifyServiceSid = "VA96fb7f70f3ca20fc6faf3239a58d364a" // Replace with your actual SID
+    private val verifyServiceSid = "VA41a8372e31d0a7b144c526aaf27a2879" // Replace with your actual SID
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

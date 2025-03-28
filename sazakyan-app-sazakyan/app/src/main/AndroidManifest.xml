@@ -51,9 +51,9 @@
         <activity android:name=".profile.EmailVerificationActivity"
             android:exported="false" />
 
-        <activity
-            android:name=".descriptions.LandcruiserDescription"
+        <activity android:name=".profile.CallVerificationActivity"
             android:exported="false" />
+
         <activity
             android:name=".descriptions.RaptorDescription"
             android:exported="false" />

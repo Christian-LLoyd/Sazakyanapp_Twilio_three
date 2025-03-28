@@ -5,17 +5,16 @@ import retrofit2.http.*
 import com.example.sazakyanapp.models.TwilioResponse
 
 interface TwilioApiService {
-
-    // 1) Send OTP (SMS or Email)
+    // Send OTP via SMS, Email, or Call
     @FormUrlEncoded
     @POST("Services/{serviceSid}/Verifications")
     fun sendOTP(
         @Path("serviceSid") serviceSid: String,
-        @Field("To") recipient: String, // e.g. "user@example.com"
-        @Field("Channel") channel: String // "sms" or "email"
+        @Field("To") recipient: String, // phone number or email address
+        @Field("Channel") channel: String // "sms", "email", or "call"
     ): Call<TwilioResponse>
 
-    // 2) Verify OTP (SMS or Email)
+    // Verify the OTP (for SMS, Email, or Call)
     @FormUrlEncoded
     @POST("Services/{serviceSid}/VerificationCheck")
     fun verifyOTP(

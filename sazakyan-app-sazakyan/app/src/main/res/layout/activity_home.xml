@@ -14,20 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- NEW: SMS Verification Button at top-right -->
-        <Button
-            android:id="@+id/btnSmsVerificationHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SMS Verification"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp"
-            android:backgroundTint="@android:color/holo_blue_dark" />
-
-        <!-- NEW: Email Verification Button -->
+        <!-- Email Verification Button (Left) -->
         <Button
             android:id="@+id/btnEmailVerification"
             android:layout_width="wrap_content"
@@ -36,9 +23,36 @@
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:backgroundTint="@android:color/holo_blue_dark"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_alignParentLeft="true"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp" />
+            android:layout_marginLeft="16dp" />
+
+        <!-- Call Verification Button (Middle) -->
+        <Button
+            android:id="@+id/btnCallVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call Verification"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_toRightOf="@id/btnEmailVerification"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- SMS Verification Button (Right) -->
+        <Button
+            android:id="@+id/btnSmsVerificationHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Verification"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_toRightOf="@id/btnCallVerification"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
 
 
         <!-- ScrollView containing your existing UI -->

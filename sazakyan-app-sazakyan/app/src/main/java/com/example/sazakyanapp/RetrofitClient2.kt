@@ -9,7 +9,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClient2 {
     private const val BASE_URL = "https://verify.twilio.com/v2/"
 
-    // NEW Twilio Credentials for SMS (replace these with your new values)
+    // NEW Twilio Credentials for SMS/Call Verification
+    // Replace these with your new values from Twilio for call/SMS verification
     private const val ACCOUNT_SID = ""    // e.g., "ACxxxxxxxxxxxxxxxxxxxxx"
     private const val AUTH_TOKEN = ""    // e.g., "xxxxxxxxxxxxxxxxxxxxxx"
 

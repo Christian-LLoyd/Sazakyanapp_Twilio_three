@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#1A2030"
+    tools:context=".ui.CallVerificationActivity"> <!-- Updated package name -->
+
+    <!-- Phone Number Input Field -->
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA" />
+
+    <!-- Send Call Verification Button -->
+    <Button
+        android:id="@+id/sendCallButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Call Verification"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+    <!-- Verification Code Input Field -->
+    <EditText
+        android:id="@+id/codeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter verification code"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA" />
+
+    <!-- Verify Code Button -->
+    <Button
+        android:id="@+id/verifyCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Code"
+        android:background="@android:color/holo_green_light"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

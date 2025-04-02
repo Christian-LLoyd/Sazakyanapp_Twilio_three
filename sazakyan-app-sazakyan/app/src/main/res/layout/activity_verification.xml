@@ -37,9 +37,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="64dp"
             android:fontFamily="@font/inter_bold"
-            android:text="Verify"
+            android:text="SMS Verification"
             android:textColor="#00FFD9"
-            android:textSize="50sp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -134,5 +134,30 @@
         android:layout_marginTop="20dp"
         android:textColor="#f2f2f2"
         android:fontFamily="@font/inter_bold"/>
+
+    <!-- Call and Email Button -->
+    <Button
+        android:id="@+id/btntocallverification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Switch to call verification"
+        android:textColor="#f2f2f2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifyCodeButton" />
+
+    <Button
+        android:id="@+id/btntoEmailverification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Switch to email verification"
+        android:textColor="#f2f2f2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btntocallverification" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

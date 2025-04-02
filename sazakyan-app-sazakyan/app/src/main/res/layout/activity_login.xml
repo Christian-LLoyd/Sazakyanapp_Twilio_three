@@ -111,45 +111,45 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/thirdConstraint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/secondConstraint">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/thirdConstraint"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/secondConstraint">-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Liscense ID Number"
-            android:textColorHint="#f2f2f2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Liscense ID Number"-->
+<!--            android:textColorHint="#f2f2f2"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editContactNumber2"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="20dp"
-                android:ems="10"
-                android:inputType="date"
-                android:textColorHint="#FFFFFF"
-                android:textColor="@color/primary_font_color"
-                android:textSize="17sp"
-                android:fontFamily="@font/inter"
-                android:background="@drawable/et_bg"
-                android:paddingStart="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextEmail2" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/editContactNumber2"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="date"-->
+<!--                android:textColorHint="#FFFFFF"-->
+<!--                android:textColor="@color/primary_font_color"-->
+<!--                android:textSize="17sp"-->
+<!--                android:fontFamily="@font/inter"-->
+<!--                android:background="@drawable/et_bg"-->
+<!--                android:paddingStart="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.497"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/editTextEmail2" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fourthConstraint"
@@ -158,7 +158,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/thirdConstraint">
+        app:layout_constraintTop_toBottomOf="@id/secondConstraint">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="wrap_content"

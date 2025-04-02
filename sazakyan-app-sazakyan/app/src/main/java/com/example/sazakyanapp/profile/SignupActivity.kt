@@ -28,7 +28,7 @@ class SignupActivity : AppCompatActivity() {
         checkPassword = findViewById(R.id.editTextPassword2)
         signupBtn = findViewById(R.id.button3)
         email = findViewById(R.id.editTextEmail)
-        contact = findViewById(R.id.editTextContactNumber)
+        //contact = findViewById(R.id.editTextContactNumber)
         database = Database(this)
 
         signupBtn.setOnClickListener {
@@ -37,7 +37,7 @@ class SignupActivity : AppCompatActivity() {
             val signupPassword = password.text.toString()
             val signupCpassword = checkPassword.text.toString()
             val signupEmail = email.text.toString()
-            val signupContact = contact.text.toString()
+            val signupContact = "0"
             val saveData = database.insertdata(signupUser, signupEmail, signupContact, signupPassword)
 
             if (TextUtils.isEmpty(signupUser) || TextUtils.isEmpty(signupPassword) || TextUtils.isEmpty(signupCpassword)) {

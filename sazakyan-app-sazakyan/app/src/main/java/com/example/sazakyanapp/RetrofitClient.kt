@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClient {
     private const val BASE_URL = "https://verify.twilio.com/v2/"
 
-    // Twilio Credentials (Replace with your actual values)
+
     private const val ACCOUNT_SID = ""
     private const val AUTH_TOKEN = ""
 

@@ -10,24 +10,30 @@
     android:padding="16dp"
     tools:context=".profile.EmailVerificationActivity">
 
-    <!-- Toolbar for Back Button -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarEmailVerify"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!-- Back Button (replacing toolbar) -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onBackButtonClicked" />
 
     <!-- Title or instructions -->
     <TextView
         android:id="@+id/tvEmailTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
         android:text="Email Verification"
         android:textSize="28sp"
         android:textColor="#00FFD9"
-        app:layout_constraintTop_toBottomOf="@id/toolbarEmailVerify"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
@@ -35,9 +41,10 @@
     <!-- Email Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:hint="Email"
+        android:textColorHint="#f2f2f2"
         app:layout_constraintTop_toBottomOf="@id/tvEmailTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,11 +52,14 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/et_bg"
             android:inputType="textEmailAddress"
+            android:textColor="@color/primary_font_color"
             android:textColorHint="#FFFFFF"
-            android:textSize="17sp" />
+            android:textSize="17sp"
+            android:paddingStart="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Send Code Button -->
@@ -67,9 +77,10 @@
     <!-- OTP Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/codeInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:hint="Verification Code"
+        android:textColorHint="#f2f2f2"
         app:layout_constraintTop_toBottomOf="@id/sendCodeButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,11 +88,14 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/codeEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/et_bg"
             android:inputType="number"
+            android:textColor="@color/primary_font_color"
             android:textColorHint="#FFFFFF"
-            android:textSize="17sp" />
+            android:textSize="17sp"
+            android:paddingStart="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Verify Code Button -->
@@ -95,5 +109,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
         android:textColor="#f2f2f2" />
+
+    <!-- SMS and Call Button -->
+    <Button
+        android:id="@+id/btntoSMSVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Switch to SMS verification"
+        android:textColor="#f2f2f2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifyCodeButton" />
+
+    <Button
+        android:id="@+id/btntocallverification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Switch to call verification"
+        android:textColor="#f2f2f2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btntoSMSVerification" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

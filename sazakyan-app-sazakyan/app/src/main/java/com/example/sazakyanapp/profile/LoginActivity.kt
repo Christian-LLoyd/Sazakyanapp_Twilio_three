@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
         editUser = findViewById(R.id.editTextPersonName2)
         editPassword = findViewById(R.id.editTextPassword3)
         loginEmail = findViewById(R.id.editTextEmail2)
-        loginContact = findViewById(R.id.editContactNumber2)
+        //loginContact = findViewById(R.id.editContactNumber2)
         // Removed: smsVerificationBtn = findViewById(R.id.btnSmsVerification)
         databaseHelper = Database(this)
 
@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
             val insertedUser = editUser.text.toString()
             val insertedPass = editPassword.text.toString()
             val insertedEmail = loginEmail.text.toString()
-            val insertedContact = loginContact.text.toString()
+            val insertedContact = "0"
 
             // Log user input
             Log.d("UserInput", "Username: $insertedUser, Password: $insertedPass, Email: $insertedEmail, Contact: $insertedContact")

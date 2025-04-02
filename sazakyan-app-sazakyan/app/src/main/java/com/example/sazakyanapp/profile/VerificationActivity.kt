@@ -1,5 +1,6 @@
 package com.example.sazakyanapp.profile
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -20,8 +21,10 @@ class VerificationActivity : AppCompatActivity() {
     private lateinit var codeEditText: EditText
     private lateinit var sendCodeButton: Button
     private lateinit var verifyCodeButton: Button
+    private lateinit var CallVerificationButton: Button
+    private lateinit var EmailVerificationButton: Button
 
-    private val verifyServiceSid = "VA41a8372e31d0a7b144c526aaf27a2879" // Replace with your actual SID
+    private val verifyServiceSid = "VA8b2a34986f51560d8102d6167afe4e10" // Replace with your actual SID
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +34,9 @@ class VerificationActivity : AppCompatActivity() {
         codeEditText = findViewById(R.id.codeEditText)
         sendCodeButton = findViewById(R.id.sendCodeButton)
         verifyCodeButton = findViewById(R.id.verifyCodeButton)
+        CallVerificationButton = findViewById(R.id.btntocallverification)
+        EmailVerificationButton = findViewById(R.id.btntoEmailverification)
+
 
         // Send Verification Code
         sendCodeButton.setOnClickListener {
@@ -44,6 +50,14 @@ class VerificationActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Invalid phone number. Enter a valid 10-15 digit number.", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        CallVerificationButton.setOnClickListener {
+            startActivity(Intent(this, CallVerificationActivity::class.java))
+        }
+
+        EmailVerificationButton.setOnClickListener{
+            startActivity(Intent(this, EmailVerificationActivity::class.java))
         }
 
         // Verify OTP Code

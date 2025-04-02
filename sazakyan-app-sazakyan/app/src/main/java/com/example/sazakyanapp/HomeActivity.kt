@@ -25,9 +25,10 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var database: Database
 
-    private lateinit var emailVerificationBtn: Button
-    private lateinit var callVerificationBtn: Button
+//    private lateinit var emailVerificationBtn: Button
+//    private lateinit var callVerificationBtn: Button
     private lateinit var smsVerificationBtn: Button
+//    private lateinit var profileBtn: Button  // Profile button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,22 +69,27 @@ class HomeActivity : AppCompatActivity() {
             true
         }
 
-        // Initialize Verification Buttons
-        emailVerificationBtn = findViewById(R.id.btnEmailVerification)
-        callVerificationBtn = findViewById(R.id.btnCallVerification)
+        // Initialize Buttons dynamically from the layout
+//        emailVerificationBtn = findViewById(R.id.btnEmailVerification)
+//        callVerificationBtn = findViewById(R.id.btnCallVerification)
         smsVerificationBtn = findViewById(R.id.btnSmsVerificationHome)
+//        profileBtn = findViewById(R.id.btnProfile)  // Profile Button
 
-        emailVerificationBtn.setOnClickListener {
-            startActivity(Intent(this, EmailVerificationActivity::class.java))
-        }
-
-        callVerificationBtn.setOnClickListener {
-            startActivity(Intent(this, CallVerificationActivity::class.java))
-        }
+//        emailVerificationBtn.setOnClickListener {
+//            startActivity(Intent(this, EmailVerificationActivity::class.java))
+//        }
+//
+//        callVerificationBtn.setOnClickListener {
+//            startActivity(Intent(this, CallVerificationActivity::class.java))
+//        }
 
         smsVerificationBtn.setOnClickListener {
             startActivity(Intent(this, VerificationActivity::class.java))
         }
+
+//        profileBtn.setOnClickListener {
+//            startActivity(Intent(this, VerificationActivity::class.java))
+//        }
 
         // IMAGE SLIDER
         imageSlider = findViewById(R.id.imageSlider)

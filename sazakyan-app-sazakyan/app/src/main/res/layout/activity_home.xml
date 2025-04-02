@@ -14,44 +14,63 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Email Verification Button (Left) -->
+        <!-- Profile button -->
         <Button
-            android:id="@+id/btnEmailVerification"
+            android:id="@+id/btnProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email Verification"
+            android:text="Profile"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/transparent"
+            android:background="@android:color/transparent"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp" />
 
-        <!-- Call Verification Button (Middle) -->
-        <Button
-            android:id="@+id/btnCallVerification"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Call Verification"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:layout_toRightOf="@id/btnEmailVerification"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp" />
+
+
+<!--        &lt;!&ndash; Email Verification Button (Left) &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/btnEmailVerification"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Email Verification"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:backgroundTint="@android:color/holo_blue_dark"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:layout_marginLeft="16dp" />-->
+
+<!--        &lt;!&ndash; Call Verification Button (Middle) &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/btnCallVerification"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Call Verification"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:backgroundTint="@android:color/holo_blue_dark"-->
+<!--            android:layout_toRightOf="@id/btnEmailVerification"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp" />-->
 
         <!-- SMS Verification Button (Right) -->
         <Button
             android:id="@+id/btnSmsVerificationHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SMS Verification"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_toStartOf="@id/btnProfile"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10sp"
+            android:layout_toRightOf="@id/btnProfile"
             android:backgroundTint="@android:color/holo_blue_dark"
-            android:layout_toRightOf="@id/btnCallVerification"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp" />
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
 
 
 
